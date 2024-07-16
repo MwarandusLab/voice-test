@@ -9,7 +9,7 @@ def main():
 
     # Listen for the "a" key press to start capturing the name
     print("Press 'a' to start capturing the name...")
-    keyboard.wait('a')
+    keyboard.wait('a')a
 
     # Capture the audio input
     with sr.Microphone() as source:
@@ -24,7 +24,6 @@ def main():
 
         # Extract the name from the speech
         name = extract_name(text)
-        print("Detected name:", name)
 
         # Turn on the front camera and capture image if face is detected
         capture_image(name)
